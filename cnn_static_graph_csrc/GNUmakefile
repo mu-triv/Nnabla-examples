@@ -19,9 +19,5 @@
 all: Validation_example
 
 Validation_example: Validation_example.c Validation_inference.c Validation_parameters.c
-
-
-
-
-	$(CC) -Wall -Werror $(CFLAGS) $^ -o $@ $(LDFLAGS) -I /home/tvk/programming/modules/nnabla-c-runtime/include -L /home/tvk/programming/modules/nnabla-c-runtime/build/_CPack_Packages/Linux/ZIP/nnabla-c-runtime-1.2.0.dev1_c1-Linux/lib/ -lnnablart_functions -lm
+	$(CC) -Wall -Werror $(CFLAGS) $^ -o $@ $(LDFLAGS) -lnnablart_functions -lm
 
