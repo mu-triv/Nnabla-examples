@@ -1,0 +1,3 @@
+[submodule "bin2array"]
+	path = bin2array
+	url = https://github.com/Jamesits/bin2array
